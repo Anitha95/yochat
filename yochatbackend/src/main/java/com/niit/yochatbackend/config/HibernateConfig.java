@@ -4,6 +4,10 @@ import java.util.Properties;
 
 import javax.sql.DataSource;
 
+import java.util.Properties;
+
+import javax.sql.DataSource;
+
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
@@ -43,14 +47,15 @@ public class HibernateConfig {
 	
 	// sessionFactory bean will be available 
 	@Bean
-	public SessionFactory getSessionFactory(DataSource dataSource)
-	{
+	public SessionFactory getSessionFactory(DataSource dataSource) {
+		
 		LocalSessionFactoryBuilder builder = new LocalSessionFactoryBuilder(dataSource);
 		
 		builder.addProperties(getHibernateProperties());
 		builder.scanPackages("com.niit.yochatbackend.dto");
 		
 		return builder.buildSessionFactory();
+		
 	}
 
 	// All the Hibernate Properties will be returned in this method
