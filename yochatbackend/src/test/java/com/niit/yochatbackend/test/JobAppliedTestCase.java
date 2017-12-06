@@ -27,7 +27,7 @@ public class JobAppliedTestCase {
 	public static void init()
 	{
 		context = new AnnotationConfigApplicationContext();
-		context.scan("com.sbkchat.collaboration");
+		context.scan("com.niit.yochatbackend");
 		context.refresh();
 		
 		jobApplied = (JobApplied) context.getBean("jobApplied");

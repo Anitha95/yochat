@@ -27,7 +27,7 @@ public class JobTestCase {
 	public static void init()
 	{
 		context = new AnnotationConfigApplicationContext();
-		context.scan("");
+		context.scan("com.niit.yochatbackend");
 		context.refresh();
 		
 		job = (Job)context.getBean("job");

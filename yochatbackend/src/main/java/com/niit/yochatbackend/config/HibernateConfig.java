@@ -26,8 +26,8 @@ public class HibernateConfig {
 	private final static String DATABASE_URL = "jdbc:oracle:thin:@localhost:1521:XE";
 	private final static String DATABASE_DRIVER = "oracle.jdbc.driver.OracleDriver";
 	private final static String DATABASE_DIALECT = "org.hibernate.dialect.Oracle10gDialect";
-	private final static String DATABASE_USERNAME = "anitha";
-	private final static String DATABASE_PASSWORD = "anitha";
+	private final static String DATABASE_USERNAME = "system";
+	private final static String DATABASE_PASSWORD = "anitha95";
 	
 	
 	// dataSource bean will be available 
